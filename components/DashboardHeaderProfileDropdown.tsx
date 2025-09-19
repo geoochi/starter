@@ -49,10 +49,10 @@ export default async function DashboardHeaderProfileDropdown() {
               <span>Settings</span>
             </DropdownMenuItem>
           </Link>
-          <Link href='#'>
+          <Link href={billingPortalURL}>
             <DropdownMenuItem>
               <ReceiptText className='mr-2 h-4 w-4' />
-              <Link href={billingPortalURL}>Billing</Link>
+              <span>Billing</span>
             </DropdownMenuItem>
           </Link>
           <Link href='#'>
