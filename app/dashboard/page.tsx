@@ -11,8 +11,8 @@ export default async function Dashboard() {
   }
 
   return (
-    <main className='flex-1'>
-      <div className='container'>Hello {data.user.email}</div>
+    <main className='flex-1 flex justify-center items-center'>
+      <h1 className='text-4xl'>Hello {data.user.email}</h1>
     </main>
   )
 }

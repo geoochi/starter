@@ -21,7 +21,7 @@ export default async function DashboardHeader() {
   const stripePlan = getStripePlan(user!.email!)
 
   return (
-    <header className='sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
+    <header className='sticky flex justify-center top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
       <div className='container flex h-14 max-w-screen-2xl items-center'>
         <div className='mr-4 hidden md:flex'>
           <Link className='mr-2 flex items-center space-x-2' href=''>
