@@ -64,7 +64,7 @@ export default async function LandingPage() {
         </Button>
       </header>
       <main className='flex-1'>
-        <section className='w-full py-20 lg:py-32 xl:py-40'>
+        <section className='flex justify-center w-full py-20 lg:py-32 xl:py-40'>
           <div className='container px-4 md:px-6 flex flex-col md:flex-row '>
             <div className='flex flex-col space-y-4 md:w-1/2 w-full '>
               <div className='space-y-2'>
@@ -83,7 +83,7 @@ export default async function LandingPage() {
             </div>
           </div>
         </section>
-        <section className='w-full py-10 md:py-20 lg:py-32 bg-muted' id='features'>
+        <section className='flex justify-center w-full py-10 md:py-20 lg:py-32 bg-muted' id='features'>
           <div className='container px-4 md:px-6'>
             <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-4'>Our Features</h2>
             <div className='grid gap-10 sm:grid-cols-2 md:grid-cols-3'>
@@ -115,7 +115,7 @@ export default async function LandingPage() {
             </div>
           </div>
         </section>
-        <section className='w-full py-10 md:py-20 lg:py-32' id='testimonials'>
+        <section className='flex justify-center w-full py-10 md:py-20 lg:py-32' id='testimonials'>
           <div className='container px-4 md:px-6'>
             <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-4'>What Our Customers Say</h2>
             <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-8'>
@@ -159,7 +159,7 @@ export default async function LandingPage() {
             </div>
           </div>
         </section>
-        <section className='w-full py-10 md:py-20 lg:py-32 bg-muted' id='pricing'>
+        <section className='flex justify-center w-full py-10 md:py-20 lg:py-32 bg-muted' id='pricing'>
           <div className='container px-4 md:px-6'>
             <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-4'>Pricing Plans</h2>
             <p className='text-muted-foreground text-center mb-8 md:text-xl'>Choose the perfect plan for your needs</p>
@@ -193,7 +193,7 @@ export default async function LandingPage() {
             </div>
           </div>
         </section>
-        <section className='w-full py-10 md:py-20 lg:py-32 '>
+        <section className='flex justify-center w-full py-10 md:py-20 lg:py-32 '>
           <div className='container px-4 md:px-6'>
             <div className='flex flex-col items-center justify-center space-y-4 text-center'>
               <div className='space-y-2'>
@@ -211,9 +211,9 @@ export default async function LandingPage() {
           </div>
         </section>
       </main>
-      <footer className='flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t'>
-        <p className='text-xs text-muted-foreground'>© 2024 Acme Inc. All rights reserved.</p>
-        <nav className='sm:ml-auto flex gap-4 sm:gap-6'>
+      <footer className='flex justify-between gap-2 sm:flex-row py-6 w-full shrink-0 px-4 md:px-6 border-t'>
+        <p className='text-xs text-muted-foreground'>© 2025 Geoochi Inc. All rights reserved.</p>
+        <nav className='flex gap-4 sm:gap-6'>
           <Link className='text-xs hover:underline underline-offset-4' href='#'>
             Terms of Service
           </Link>
