@@ -45,7 +45,7 @@ You can easily set up social auth with this template. First navigate to google c
 
 You can use any Postgres db with this boilerplate code. Feel free to use [Vercel's Marketplace](https://vercel.com/marketplace) to browse through a collection of first-party services to add to your Vercel project.
 
-Add `DATABASE_URL` to `.env` file e.g `postgresql://${USER}:${PASSWORD}@xxxx.us-east-2.aws.neon.tech/saas-template?sslmode=require`
+Add `DATABASE_URL` to `.env` file e.g `postgresql://postgres:<Database_PASSWORD>&@db.<SUPABASE_Project_ID>.supabase.co:5432/postgres`
 
 ### Setup OAuth with Social Providers
 
@@ -93,13 +93,7 @@ To create the necessary tables to start, run `npm run db:migrate`
 4. run `npm run db:migrate` to apply migration
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -115,7 +109,7 @@ To receive webhook events from Stripe while developing locally, follow these ste
    Run the following command to forward Stripe events to your local server:
 
 ```bash
-npm run stripe:listen
+pnpm stripe:listen
 ```
 
 This command starts the Stripe CLI in listening mode and forwards incoming webhook events to `http://localhost:3000/webhook/stripe`.
